@@ -15,7 +15,7 @@ With *kubernetai*, you can define multiple *kubernetes* blocks in your Corefile.
 exactly the same as the built in *kubernetes* plugin, you just name them `kubernetai` instead of
 `kubernetes`.
 
-Note that in Kubernetes, ClusterIP Services cannot be routed outside the cluster.  Therefore to accomodate cross-cluster access, you'll need to use Service Endpoint IPs.  For that reason, for *kubernetai* to serve IPs that are routable to clients outside the cluster, you should use Headless Services instead of ClusterIP Services.  Of course, for this to work, you will also need to ensure that Service Endpoint IPs are routable across the clusters, which is possible to do, but not necessarily the case by default.
+Note that in Kubernetes, ClusterIP Services cannot be routed outside the cluster.  Therefore to accommodate cross-cluster access, you'll need to use Service Endpoint IPs.  For that reason, for *kubernetai* to serve IPs that are routable to clients outside the cluster, you should use Headless Services instead of ClusterIP Services.  Of course, for this to work, you will also need to ensure that Service Endpoint IPs are routable across the clusters, which is possible to do, but not necessarily the case by default.
 
 ## Syntax
 
